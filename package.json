@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "First project on profession of JS Frontend developer at Hexlet studying",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksKutsenko/frontend-project-lvl1.git"
+  },
+  "author": "AleksKutsenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksKutsenko/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/AleksKutsenko/frontend-project-lvl1#readme"
+}
