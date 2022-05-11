@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import solution from '../src/cli.js';
+import solution from "../src/cli.js";
 solution();
