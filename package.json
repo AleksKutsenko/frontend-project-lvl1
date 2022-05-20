@@ -5,7 +5,8 @@
   "description": "First project on profession of JS Frontend developer at Hexlet studying",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "main": "index.js",
   "scripts": {
