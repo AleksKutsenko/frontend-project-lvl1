@@ -19,7 +19,7 @@ const calcGame = () => {
         general.right();
       } else {
         const wrongFrst = `'${userAnswer}' is wrong answer ;(. Correct answer was '${calculation1}'.
-        Let's try again, ${name}!`;
+    Let's try again, ${name}!`;
         console.log(wrongFrst);
         break;
       }
@@ -29,7 +29,7 @@ const calcGame = () => {
         general.right();
       } else {
         const wrongScnd = `'${userAnswer}' is wrong answer ;(. Correct answer was '${calculation2}'.
-        Let's try again, ${name}!`;
+    Let's try again, ${name}!`;
         console.log(wrongScnd);
         break;
       }
@@ -39,7 +39,7 @@ const calcGame = () => {
         general.right();
       } else {
         const wrongThrd = `'${userAnswer}' is wrong answer ;(. Correct answer was '${calculation3}'.
-        Let's try again, ${name}!`;
+    Let's try again, ${name}!`;
         console.log(wrongThrd);
         break;
       }
