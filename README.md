@@ -12,4 +12,4 @@ Brain-even
 Brain-calc
 
 <a href="https://asciinema.org/a/0vWsSBxlu2zIhNQzrKGckC7nB"> 
-<img src="https://https://asciinema.org/a/0vWsSBxlu2zIhNQzrKGckC7nB.svg" /> </a>
+<img src="https://asciinema.org/a/0vWsSBxlu2zIhNQzrKGckC7nB.svg" /> </a>
