@@ -12,15 +12,18 @@ const progressionGame = () => {
     const hiddenNumber = hiddenNumbers[Math.round(Math.random() * (hiddenNumbers.length - 1))];
     const quest = [];
     let result1 = 0;
+    let questresult = '';
     for (let i1 = 0; i1 <= 9; i1 += 1) {
       result1 += number1;
       if (i1 === hiddenNumber) {
         quest.push('..');
+        questresult += ' ..';
       } else {
         quest.push(result1);
+        questresult = `${questresult} ${result1}`;
       }
     }
-    console.log(`Question: ${quest}`);
+    console.log(`Question:${questresult}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const hiddenIndex = quest.indexOf('..');
     const userNumber = quest[hiddenIndex - 1] + number1;
