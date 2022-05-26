@@ -11,10 +11,10 @@ const calcGame = () => {
     const number2 = Math.round(Math.random() * 100);
     const operators = ['+', '-', '*'];
     const operator = operators[Math.round(Math.random() * (operators.length - 1))];
-    console.log(`Question: ${number1}${operator}${number2}`);
-    const userAnswer = readlineSync.question('Your answer: ');
     if (operator === '+') {
       const calculation1 = number1 + number2;
+      console.log(`Question: ${calculation1}`);
+      const userAnswer = readlineSync.question('Your answer: ');
       if (Number(userAnswer) === calculation1) {
         general.right();
       } else {
@@ -25,6 +25,8 @@ const calcGame = () => {
       }
     } else if (operator === '-') {
       const calculation2 = number1 - number2;
+      console.log(`Question: ${calculation2}`);
+      const userAnswer = readlineSync.question('Your answer: ');
       if (Number(userAnswer) === calculation2) {
         general.right();
       } else {
@@ -35,6 +37,8 @@ const calcGame = () => {
       }
     } else if (operator === '*') {
       const calculation3 = number1 * number2;
+      console.log(`Question: ${calculation3}`);
+      const userAnswer = readlineSync.question('Your answer: ');
       if (Number(userAnswer) === calculation3) {
         general.right();
       } else {
