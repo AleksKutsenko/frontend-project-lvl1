@@ -6,8 +6,8 @@
 
 Brain-even
 
-<a href="https://asciinema.org/a/G7fvDFuYbgd02lqsziTN4rtqR"> 
-<img src="https://asciinema.org/a/G7fvDFuYbgd02lqsziTN4rtqR.svg" /> </a>
+<a href="   https://asciinema.org/a/4Gz2fVW824JDkP1UmQf3EIIwT"> 
+<img src="   https://asciinema.org/a/4Gz2fVW824JDkP1UmQf3EIIwT.svg" /> </a>
 
 Brain-calc
 
@@ -18,4 +18,10 @@ Brain-gcd
 
 <a href="https://asciinema.org/a/Ha84elmqhF7phqiQzd2KnFzys"> 
 <img src="https://asciinema.org/a/Ha84elmqhF7phqiQzd2KnFzys.svg" /> </a>
+
+Brain-progression
+
+<a href="https://asciinema.org/a/HPdJDUn18DKAqx6kvTJ73tEbB"> 
+<img src="https://asciinema.org/a/HPdJDUn18DKAqx6kvTJ73tEbB.svg" /> </a>
+
 
