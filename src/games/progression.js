@@ -26,7 +26,12 @@ const progressionGame = () => {
     console.log(`Question:${questresult}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const hiddenIndex = quest.indexOf('..');
-    const userNumber = quest[hiddenIndex - 1] + number1;
+    let userNumber = 0;
+    if (hiddenIndex === 0) {
+      userNumber = quest[hiddenIndex] + number1;
+    } else {
+      userNumber = quest[hiddenIndex - 1] + number1;
+    }
     if (Number(userAnswer) === userNumber) {
       general.right();
     } else {
