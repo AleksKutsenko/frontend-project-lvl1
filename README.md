@@ -6,8 +6,8 @@
 
 Brain-even
 
-<a href="   https://asciinema.org/a/4Gz2fVW824JDkP1UmQf3EIIwT"> 
-<img src="   https://asciinema.org/a/4Gz2fVW824JDkP1UmQf3EIIwT.svg" /> </a>
+<a href="https://asciinema.org/a/4Gz2fVW824JDkP1UmQf3EIIwT"> 
+<img src="https://asciinema.org/a/4Gz2fVW824JDkP1UmQf3EIIwT.svg" /> </a>
 
 Brain-calc
 
