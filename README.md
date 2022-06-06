@@ -9,9 +9,9 @@ Brain Games is a set of five console games based on popular mobile brain trainin
 
 - Calculator. Arithmetic expressions to be evaluated.<br>
 - Progression. Search for missing numbers in a sequence of numbers.<br>
-- Definition of an even number.<br>
-- Determining the greatest common divisor.<br>
-- Definition of a prime number.<br>
+- Even. Definition of an even number.<br>
+- GCD - greatest common divisor. Determining the greatest common divisor.<br>
+- Prime. Definition of a prime number.<br>
 
 # Setup:
 - Install and update Node.js package.<br>
