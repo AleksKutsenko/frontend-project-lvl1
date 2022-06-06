@@ -28,7 +28,7 @@ const startGame = () => {
     const hiddenIndex = quest.indexOf('..');
     let userNumber = 0;
     if (hiddenIndex === 0) {
-      userNumber = quest[hiddenIndex] + number1;
+      userNumber = number1;
     } else {
       userNumber = quest[hiddenIndex - 1] + number1;
     }
