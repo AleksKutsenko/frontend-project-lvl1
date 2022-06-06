@@ -14,7 +14,7 @@ const startGame = () => {
     const wrngAnsw = 'no';
     let counter = 0;
     let primer = '';
-    for (let i1 = 1; i1 <= number1 / 2; i1 += 1) {
+    for (let i1 = 1; i1 <= number1; i1 += 1) {
       if (number1 % i1 === 0) {
         counter += 1;
       }
