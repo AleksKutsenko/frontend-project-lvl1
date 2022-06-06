@@ -11,7 +11,7 @@ const startGame = () => {
     const number2 = Math.round(Math.random() * 100);
     console.log(`Question: ${number1} ${number2}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (number1 > number2) {
+    if (number1 >= number2) {
       for (let firstNod = number2; firstNod > 0; firstNod -= 1) {
         if (number1 % firstNod === 0 && number2 % firstNod === 0) {
           if (firstNod === Number(userAnswer)) {
