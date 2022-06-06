@@ -19,7 +19,8 @@ Brain Games is a set of five console games based on popular mobile brain trainin
 - Clone repository with Brain-Games at your laptop: https://github.com/AleksKutsenko/frontend-project-lvl1.git <br>
 - For make game run properly check depencies by entering in command line: make install <br>
 - If you wnat to start any game enter in command line : *game name* <br>
-All avaliable games and video, that explains how do they work are shown further:<br>
+
+All avaliable games and video, that explains how do they work are shown further:
 
 ### Brain-even:
 
