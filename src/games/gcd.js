@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import * as general from '../index.js';
 
-const gcdGame = () => {
+const startGame = () => {
   general.greeting();
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -47,4 +47,4 @@ Let's try again, ${name}!`;
   }
 };
 
-export default gcdGame;
+export default startGame;

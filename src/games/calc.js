@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import * as general from '../index.js';
 
-const calcGame = () => {
+const startGame = () => {
   general.greeting();
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -50,4 +50,4 @@ const calcGame = () => {
   }
 };
 
-export default calcGame;
+export default startGame;
