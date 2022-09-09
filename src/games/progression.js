@@ -1,49 +1,32 @@
-import readlineSync from 'readline-sync';
-import * as general from '../index.js';
+import startGame from '../index.js';
+import randomNumber from '../utils.js';
 
-const startGame = () => {
-  general.greeting();
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log('What number is missing in the progression?');
-  for (let i = 0; i < 3; i += 1) {
-    const number1 = Math.round(Math.random() * 100);
-    const hiddenNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const hiddenNumber = hiddenNumbers[Math.round(Math.random() * (hiddenNumbers.length - 1))];
-    const quest = [];
-    let result1 = 0;
-    let questresult = '';
-    for (let i1 = 0; i1 <= 9; i1 += 1) {
-      result1 += number1;
-      if (i1 === hiddenNumber) {
-        quest.push('..');
-        questresult += ' ..';
-      } else {
-        quest.push(result1);
-        questresult = `${questresult} ${result1}`;
-      }
+const rules = 'What number is missing in the progression?';
+
+const generateProgression = (startItem, stepItem) => {
+  const progressionArray = [];
+  const progressionLength = 10;
+  for (let i = 0; i < progressionLength - 1; i += 1) {
+    if (i === 0) {
+      progressionArray.push(startItem);
     }
-    console.log(`Question:${questresult}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    const hiddenIndex = quest.indexOf('..');
-    let userNumber = 0;
-    if (hiddenIndex === 0) {
-      userNumber = number1;
-    } else {
-      userNumber = quest[hiddenIndex - 1] + number1;
-    }
-    if (Number(userAnswer) === userNumber) {
-      general.right();
-    } else {
-      const wrongFrst = `'${userAnswer}' is wrong answer ;(. Correct answer was '${userNumber}'.
-Let's try again, ${name}!`;
-      console.log(wrongFrst);
-      break;
-    }
-    if (i === 2) {
-      console.log(`Congratulations, ${name}!`);
-    }
+    progressionArray.push(progressionArray[i] + stepItem);
   }
+  return progressionArray;
 };
 
-export default startGame;
+const roundGeneration = () => {
+  const startNumber = randomNumber();
+  const howBigStep = randomNumber();
+  const hiddenItemIndex = Math.round(Math.random() * 10);
+  const progression = generateProgression(startNumber, howBigStep);
+  const hiddenItemValue = progression[hiddenItemIndex];
+  progression[hiddenItemIndex] = '..';
+  const question = progression.join(' ');
+  const answer = String(hiddenItemValue);
+  return [question, answer];
+};
+
+const startProgressionGame = () => startGame(rules, roundGeneration);
+
+export default startProgressionGame;

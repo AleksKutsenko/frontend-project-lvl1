@@ -1,4 +1,4 @@
-name: step-4-check
+name: eslint-check
 on: [push]
 env:
   CI: true
