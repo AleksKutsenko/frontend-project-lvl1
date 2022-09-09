@@ -18,7 +18,7 @@ const generateProgression = (startItem, stepItem) => {
 const roundGeneration = () => {
   const startNumber = randomNumber();
   const howBigStep = randomNumber();
-  const hiddenItemIndex = Math.round(Math.random() * 10);
+  const hiddenItemIndex = Math.floor(Math.random() * 10);
   const progression = generateProgression(startNumber, howBigStep);
   const hiddenItemValue = progression[hiddenItemIndex];
   progression[hiddenItemIndex] = '..';
