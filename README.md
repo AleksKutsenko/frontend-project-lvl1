@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/AleksKutsenko/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AleksKutsenko/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/AleksKutsenko/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9931023de658ca1bd5f8/maintainability" /></a>
 
-[![step-4-check](https://github.com/AleksKutsenko/frontend-project-lvl1/actions/workflows/step-4-check.yml/badge.svg)](https://github.com/AleksKutsenko/frontend-project-lvl1/actions/workflows/step-4-check.yml)
+[![eslint-check](https://github.com/AleksKutsenko/frontend-project-lvl1/actions/workflows/eslint-check.yml/badge.svg)](https://github.com/AleksKutsenko/frontend-project-lvl1/actions/workflows/eslint-check.yml)
 
 # Brain-games:
 Brain Games is a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again. Games:<br>
