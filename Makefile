@@ -1,35 +1,19 @@
 install:
-			npm ci
-
-
+	npm ci
 brain-games:
-			node bin/brain-games.js
-
-
+	node bin/brain-games.js
 publish:
-			npm publish --dry-run
-
-
+	npm publish --dry-run
 make lint:
-			npx eslint .
-
-
+	npx eslint .
 brain-even:
-			node bin/brain-even.js
-
-
+	node bin/brain-even.js
 brain-calc:
-			node bin/brain-calc.js
-
-
+	node bin/brain-calc.js
 brain-gcd:
-			node bin/brain-gcd.js		
-
-
+	node bin/brain-gcd.js		
 brain-progression:
-			node bin/brain-progression.js
-
-
+	node bin/brain-progression.js
 brain-prime:
-			node bin/brain-prime.js		
+	node bin/brain-prime.js		
 

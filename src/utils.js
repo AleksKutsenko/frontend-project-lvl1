@@ -1,6 +1,14 @@
-const randomNumber = () => {
-  const x = Math.round(Math.random() * 100);
-  return x;
-};
+function getRandomNumber(number1, number2) {
+  return Math.round(Math.random() * (number2 - number1) + number1);
+}
 
-export default randomNumber;
+function getRandomInt(min, max) {
+  const firstInt = Math.ceil(min);
+  const secondInt = Math.floor(max);
+  return Math.floor(Math.random() * (secondInt - firstInt)) + firstInt;
+}
+
+export {
+  getRandomInt,
+  getRandomNumber,
+};

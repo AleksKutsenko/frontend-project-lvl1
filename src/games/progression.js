@@ -1,25 +1,22 @@
 import startGame from '../index.js';
-import randomNumber from '../utils.js';
+import { getRandomNumber, getRandomInt } from '../utils.js';
 
-const rules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-const generateProgression = (startItem, stepItem) => {
-  const progressionArray = [];
-  const progressionLength = 10;
-  for (let i = 0; i < progressionLength - 1; i += 1) {
-    if (i === 0) {
-      progressionArray.push(startItem);
-    }
-    progressionArray.push(progressionArray[i] + stepItem);
+const generateProgression = (startNumber, step, length) => {
+  const progressionArray = [startNumber];
+  for (let i = 0; i < length - 1; i += 1) {
+    progressionArray.push(progressionArray[i] + step);
   }
   return progressionArray;
 };
 
-const roundGeneration = () => {
-  const startNumber = randomNumber();
-  const howBigStep = randomNumber();
-  const hiddenItemIndex = Math.floor(Math.random() * 10);
-  const progression = generateProgression(startNumber, howBigStep);
+const generateRound = () => {
+  const startNumber = getRandomNumber(0, 100);
+  const stepSize = getRandomNumber(0, 100);
+  const progressionLength = getRandomNumber(5, 10);
+  const hiddenItemIndex = getRandomInt(0, progressionLength - 1);
+  const progression = generateProgression(startNumber, stepSize, progressionLength);
   const hiddenItemValue = progression[hiddenItemIndex];
   progression[hiddenItemIndex] = '..';
   const question = progression.join(' ');
@@ -27,6 +24,6 @@ const roundGeneration = () => {
   return [question, answer];
 };
 
-const startProgressionGame = () => startGame(rules, roundGeneration);
+const startProgressionGame = () => startGame(description, generateRound);
 
 export default startProgressionGame;

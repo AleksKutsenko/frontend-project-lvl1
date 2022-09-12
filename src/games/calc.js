@@ -1,28 +1,28 @@
 import startGame from '../index.js';
-import randomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 const operators = ['+', '-', '*'];
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const calc = (numberFirst, numberSecond, operator) => {
+const calculate = (number1, number2, operator) => {
   switch (operator) {
-    case '+': return numberFirst + numberSecond;
-    case '-': return numberFirst - numberSecond;
-    case '*': return numberFirst * numberSecond;
+    case '+': return number1 + number2;
+    case '-': return number1 - number2;
+    case '*': return number1 * number2;
     default:
       throw new Error(`Wrong operator - ${operator}, use (+ or - or *)`);
   }
 };
 
-const roundGeneration = () => {
-  const numberFirst = randomNumber();
-  const numberSecond = randomNumber();
-  const operator = operators[Math.round(Math.random() * (operators.length - 1))];
-  const question = `${numberFirst} ${operator} ${numberSecond}`;
-  const answer = String(calc(numberFirst, numberSecond, operator));
+const generateRound = () => {
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
+  const operator = operators[getRandomNumber(0, 2)];
+  const question = `${number1} ${operator} ${number2}`;
+  const answer = String(calculate(number1, number2, operator));
   return [question, answer];
 };
 
-const startCalcGame = () => startGame(rules, roundGeneration);
+const startCalcGame = () => startGame(description, generateRound);
 
 export default startCalcGame;
